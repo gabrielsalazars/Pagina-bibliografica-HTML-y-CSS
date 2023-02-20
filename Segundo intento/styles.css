@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-size:16px;
+    font-family: 'Oswald', sans-serif;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23e6ff00' fill-opacity='0.07' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+}
+/* NAVIGATION*/
+
+.nav-main{
+
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+
+}
+.nav-brand{
+    width: 50px;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+/*nav left*/
+.nav-main ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+.nav-main ul li a{
+    padding: 2px;
+}
+.nav-main ul li a:hover {
+    border-bottom: 2px solid white;
+
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+
+}
+/*showcase*/
+.showcase{
+    width: 100%;
+    background-color: rgb(82, 66, 255);
+    height: 550px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: url('/images/diane-picchiottino-W_dfi26u2U0-unsplash.jpg') no-repeat center/cover;
+    
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-bloc;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0px
+
+}
+
+.btn:hover{
+    opacity: .50;
+}
+
+.showcase h2{
+    margin-bottom: 10px;
+
+}
+.showcase p{
+    margin-bottom: 10px;
+
+}
+
+/*noticias*/
+.noticias{
+    padding: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
+}
+
+.noticias img{
+    width: 90%;
+    height: 400px;
+}
+.imgone:hover{
+    opacity: .7;
+    cursor: grabbing;
+
+}
+.imgone2:hover{
+    opacity: .7;
+    cursor: grabbing;
+
+}
+.final:hover{
+    opacity: .7;
+    cursor: grabbing;
+
+}
+
+.noticias h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.noticias a{
+    padding: 10px 0;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.noticias a:hover{
+    text-decoration: underline;
+
+}
+
+.showcase h2{
+    font-size: 40px;
+}
+
+/*tarjeta*/
+.cards-banner-one{
+    width: 100%;
+    height: 350px;
+    background-image: url(images/site.jpg) ;
+    margin: bottom 40px;
+}
+
+.cards-banner-one .content{
+    width: 50%;
+    padding: 90px 0 0 20px;
+    color: white;
+}
+
+.cards-banner-one p,
+.cards-banner-one h2{
+    margin: 10px 0 20px;
+}
+
+
+.cards-banner-two{
+    width: 100%;
+    height: 500px;
+    background: url('./images/guspavo.jpg')no-repeat center center/cover;
+}
+
+.cards-banner-two .content{
+    width: 40%;
+    padding: 50px 0 0 30px;
+    color: white;
+}
+
+.cards-banner-two p,
+.cards-banner-two h2{
+    margin: 10px 0 20px;
+}
+
+/*social*/
+
+.social{
+    margin: 50px;
+    
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+/*footer*/
+
+.footer-links{
+    background: rgb(220, 0, 0);
+    color: white;
+    font-size: 14px;
+    padding: 35px 0;
+
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.footer-container ul{
+    margin: 0 auto;
+}
+
+.footer-container ul li{
+    line-height: 2.1;
+}
+
+.footer{
+    background:red;
+    color: rgb(249, 249, 249);
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
